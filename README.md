@@ -1,24 +1,24 @@
 IBM MobileFirst Platform Foundation
 ===
 ## SMSNotificationsAndroid
-A sample application demonstrating use of sms notifications in Android applications.
+A sample application demonstrating use of SMS notifications in Android applications.
 
 ### Tutorials
-
+https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/notifications/notifications
 
 ### Usage
 
-
-
-**Notes:**
-
-* The GCM Server Key and senderId values must be configured via the MobileFirst Operations Console.
+1. From a **Command-line**, navigate to the project's root folder.
+2. Register the application by running the command: `mfpdev app register`.
+3. In the MobileFirst console, under **Applications** → **SMSNotificationsAndroid** → **Security** → **Map scope elements to security checks**, add a mapping for `push.mobileclient`.
+4. In the MobileFirst Operations Console, setup the MobileFirst Server with GCM key and senderId, and add tags.
+5. Import the project to Android Studio, and run the sample by clicking the **Run** button.
 
 ### Supported Levels
 IBM MobileFirst Platform Foundation 8.0
 
 ### License
-Copyright 2015 IBM Corp.
+Copyright 2016 IBM Corp.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
