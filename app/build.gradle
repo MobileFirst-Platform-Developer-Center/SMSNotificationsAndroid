@@ -17,10 +17,7 @@
 apply plugin: 'com.android.application'
 
 repositories {
-    //jcenter()
-    maven {
-        url "http://visustar.francelab.fr.ibm.com:8081/nexus/content/repositories/mobile-s/"
-    }
+    jcenter()
 }
 
 android {
@@ -52,15 +49,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.2.0'
     compile 'com.android.support:design:23.2.0'
-    /*compile group: 'com.ibm.mobile.foundation',
-            name: 'ibmmobilefirstplatformfoundationpush',
-            version: '8.0.+',
-            ext: 'aar',
-            transitive: true*/
-    compile group: 'com.ibm.mobile.foundation',
-            name: 'ibmmobilefirstplatformfoundation',
-            version: '8.0.+',
-            ext: 'aar',
-            transitive: true
-    compile "com.google.android.gms:play-services-gcm:8.4.0"
+    compile 'com.ibm.mobile.foundation:ibmmobilefirstplatformfoundation:8.0.+'
+    compile 'com.ibm.mobile.foundation:ibmmobilefirstplatformfoundationpush:8.0.+'
+    compile "com.google.android.gms:play-services-gcm:9.0.2"
 }
