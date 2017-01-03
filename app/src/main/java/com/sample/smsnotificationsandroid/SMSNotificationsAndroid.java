@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.sample.pushnotificationsandroid;
+package com.sample.smsnotificationsandroid;
 
 import android.app.Application;
 import android.util.Log;
@@ -22,7 +22,7 @@ import android.util.Log;
 import com.ibm.mobilefirstplatform.clientsdk.android.push.api.MFPPush;
 import com.worklight.wlclient.api.WLClient;
 
-public class PushNotificationsApplication extends Application {
+public class SMSNotificationsAndroid extends Application {
 
     private static final String TAG = "Application";
 
@@ -36,10 +36,7 @@ public class PushNotificationsApplication extends Application {
         // Initialize MobileFirst Push SDK. This needs to happen just once.
         MFPPush.getInstance().initialize(this);
 
-        // Initialize challenge handler
-        UserLoginChallengeHandler.createAndRegister();
-
-        Log.i(TAG, "Push has been initialized in the PushNotificationsApplication.class.");
+        Log.i(TAG, "Push has been initialized in the SMSNotificationsAndroid.class.");
 
     }
 }

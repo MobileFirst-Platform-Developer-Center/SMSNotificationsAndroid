@@ -14,29 +14,19 @@
  * limitations under the License.
  */
 
-package com.sample.pushnotificationsandroid;
+package com.sample.smsnotificationsandroid;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
-public class LoginActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-    }
-
-    @Override
-    public void onBackPressed() {
-        Intent intent = new Intent();
-        intent.setAction(Constants.ACTION_LOGIN_CANCEL);
-        LocalBroadcastManager.getInstance(this).sendBroadcast(intent);
-        super.onBackPressed();
     }
 }

@@ -16,7 +16,7 @@
   -->
 
 <resources>
-    <string name="app_name">PushNotificationsAndroid</string>
+    <string name="app_name">SMS Notifications</string>
     <string name="action_settings">Settings</string>
     <string name="hello_push">Hello Push!</string>
     <string name="btn_is_push_supported">Is Push Supported</string>

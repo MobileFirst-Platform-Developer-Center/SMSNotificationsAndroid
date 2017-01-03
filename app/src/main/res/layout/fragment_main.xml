@@ -24,15 +24,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.sample.pushnotificationsandroid.MainActivityFragment"
+    tools:context="com.sample.smsnotificationsandroid.MainActivityFragment"
     tools:showIn="@layout/activity_main">
-
-    <Button
-        android:id="@+id/btn_push_supported"
-        style="?android:borderlessButtonStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_is_push_supported" />
 
     <EditText
         android:id="@+id/txtphoneNumber"
@@ -43,45 +36,14 @@
 
     <Button
         android:id="@+id/btn_register"
-        style="?android:borderlessButtonStyle"
+        style="@style/Widget.AppCompat.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btn_register_device" />
 
     <Button
-        android:id="@+id/btn_get_tags"
-        style="?android:borderlessButtonStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_get_tags" />
-
-    <Button
-        android:id="@+id/btn_subscribe"
-        style="?android:borderlessButtonStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:enabled="false"
-        android:text="@string/btn_subscribe" />
-
-    <Button
-        android:id="@+id/btn_get_subscriptions"
-        style="?android:borderlessButtonStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:enabled="false"
-        android:text="@string/btn_get_subscriptions" />
-
-    <Button
-        android:id="@+id/btn_unsubscribe"
-        style="?android:borderlessButtonStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:enabled="false"
-        android:text="@string/btn_unsubscribe" />
-
-    <Button
         android:id="@+id/btn_unregister"
-        style="?android:borderlessButtonStyle"
+        style="@style/Widget.AppCompat.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:enabled="false"
